@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#select_all").change(function(){
+		$(".checkbox").prop("checked", $(this).prop("checked"));
+	});
+	$(".checkbox").change(function(){
+		if (false == $(this).prop("checked")){
+			$("#select_all").prop("checked",false);
+		}
+	});
+});
+
+</script>
+<style type="text/css">
+.checkbox{
+	display:inline;
+	}
+	
+</style>
+</head>
+
+<body >
+<ul>
+    <li><input type="checkbox" id="select_all"/> which language you know</li> <br/>
+    <li><input class="checkbox" type="checkbox" name="check[]"> javascript</li>
+    <li><input class="checkbox" type="checkbox" name="check[]"> java</li>
+    <li><input class="checkbox" type="checkbox" name="check[]"> python</li>
+    <li><input class="checkbox" type="checkbox" name="check[]"> jquery</li>
+    <li><input class="checkbox" type="checkbox" name="check[]"> Angular</li>
+    <li><input class="checkbox" type="checkbox" name="check[]"> hadoop</li>
+</ul>
+
+
+</body>
+
+
+</html>

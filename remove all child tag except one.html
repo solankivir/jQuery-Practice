@@ -1,0 +1,40 @@
+<!-- 8)	Inside the a div “#target”, have h1, h2,h3, h4 and h5 tags. Remove all children of '#target' but not h2. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#count1").click(function(){
+			$("#target").find("h1,h3,h4,h5").remove();
+			
+		});
+	});	
+</script>
+
+</head>
+
+<body >
+	<button class="btn btn-primary" id="count1"> Remove Elements </button>
+<br/>
+
+<div id="target">
+<h1> jQuery Tutorial </h1>
+<h2 style="color:red"> jQuery Tutorial </h2>
+<h3> jQuery Tutorial </h3>
+<h4> jQuery Tutorial </h4>
+<h5> jQuery Tutorial </h5>
+</div>
+	
+</body>
+</html>

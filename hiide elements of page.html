@@ -1,0 +1,37 @@
+<!-- 5)	Have several html tags on the page. Have an input button with id hideElems. When this button is clicked all the elements on the page should be hidden. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>3</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#hideElems").click(function(){
+			$("body").hide();
+		});
+	});	
+</script>
+
+</head>
+
+<body >
+	<input type="button" value="hide" id="hideElems"/>
+<p> 1)	In HTML create a div with id #target. On button click, Change the background color of '#target' by using JQUERY. </p>
+<br/>
+<p> 5)	Have several html tags on the page. Have an input button with id hideElems. When this button is clicked all the elements on the page should be hidden. </p>
+<br/>
+<div class="info" style="width:100px; height:100px; background-color:red;">   </div> <br/>
+<div class="info" style="width:100px; height:100px; background-color:red;">   </div> <br/>
+<div class="info" style="width:100px; height:100px; background-color:red;">   </div> <br/>
+
+
+</body>
+</html>

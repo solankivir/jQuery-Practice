@@ -1,0 +1,34 @@
+<!-- 4)	In HTML create 3 divs with class “.info”. On button double click, Change background color of the second div with class info. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>3</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input[type=button]").dblclick(function(){
+			$(".info").eq(1).css("background-color","yellow");
+		});
+	});	
+</script>
+
+</head>
+
+<body >
+	<div class="info" style="width:100px; height:100px; background-color:red;">   </div> <br/>
+	<div class="info" style="width:100px; height:100px; background-color:red;">   </div> <br/>
+	<div class="info" style="width:100px; height:100px; background-color:red;">   </div> <br/>
+	<input type="button" value="add html" />
+
+</body>
+
+
+</html>

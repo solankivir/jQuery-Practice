@@ -1,0 +1,134 @@
+<!-- 11)Have a three select boxes (drop down boxes). When you click on button called VALIDATE 
+		then it should check if the select boxes are selected or NOT. 
+		If yes, then the TEXT that were selected in each of these select boxes should be added a Div.Create this DIV dynamically. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 6</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+
+<script type="text/javascript">
+$(document).ready(function (){
+	$(".dropdown").click(function(){
+		$("#result").append($(this).html() + "is selected");
+	});
+	});
+
+</script>
+
+<style type="text/css"> 
+#imglist {
+    position: relative;
+}
+
+#imglist li {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    position: absolute;
+    top: 0;
+	margin-left:1000px;
+	margin-top: 50px;
+}
+
+#imglist li, #imglist a {
+    height: 40px;
+    display: block;	
+}
+
+</style>
+
+</head>
+
+<body >
+
+
+	<!-- Navigation Bar -->
+	<form>
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="nav nav-justified navbar-inverse">
+					<li><a href="#"> Home </a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Company </a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Mission , vision and values </a></li>
+							<li><a href="#"> The Saibersys Advantage </a></li>
+							<li><a href="#"> Global Delivery Model </a></li>
+							<li><a href="#"> Clients </a></li>
+							<li><a href="#"> Partners </a></li>
+							<li><a href="#"> Diversity </a></li>
+							<li><a href="#"> Certifications </a></li>
+							<li><a href="#"> Fact Sheets </a></li>
+						</ul>				
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Solutions </a>
+						<ul class="dropdown-menu"> 
+							<li><a href="#"> Cloud Integration </a></li>
+							<li><a href="#"> Mobility </a></li>
+							<li><a href="#"> Supply Chain Management </a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Services </a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Business Intelligence </a></li>
+							<li><a href="#"> Enterprise Mobility </a></li>
+							<li><a href="#"> Bigdata </a></li>
+							<li><a href="#"> Cloud </a></li>
+							<li><a href="#"> Testing </a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Products </a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Quick HRMS </a></li>
+							<li><a href="#"> UBSearch </a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Industries </a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Education </a></li>
+							<li><a href="#"> Healthcare </a></li>
+							<li><a href="#"> Insurance </a></li>
+							<li><a href="#"> Life Sciences </a></li>
+							<li><a href="#"> Manufacturing </a></li>
+							<li><a href="#"> Public Sector </a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Insights </a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Whitepaper </a></li>
+							<li><a href="#"> Case study </a></li>
+							<li><a href="#"> Resources </a></li>
+							<li><a href="#"> Testimonials </a></li>
+							<li><a href="#"> News </a></li>
+							<li><a href="#"> Events </a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Contact Us </a>
+						<ul class="dropdown-menu">
+							<li><a href="#"> Contact Form </a></li>
+							<li><a href="#"> Website Feedback Form </a></li>
+							<li><a href="#"> Locations </a></li>
+							<li><a href="#"> Email Us </a></li>
+						</ul>
+					</li>
+				</ul>						
+			</div>
+		</div>	
+	</form>		
+	<div id="result"> </div>
+</div>	
+</body>
+
+
+</html>

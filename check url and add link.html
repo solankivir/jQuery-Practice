@@ -1,0 +1,41 @@
+<!-- 12)	On document ready,  turn every second paragraph in a block of text blue, but we want to ignore other elements such as images or divs, etc -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"> </script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#checkurl").click(function(){
+			$("a").each(function(){
+				if( window.location.href.indexOf("www.instagram.com" == -1)){
+					$("#addlink").removeAttr("disabled");
+				}
+			});
+		});
+		$("#addlink").click(function(){
+			$("body").append("<a href='http://www.instagram.com'> Instagram </a> <br/>");
+		});
+	});	
+</script>
+
+</head>
+
+<body >
+
+<button  id="checkurl"> Check Url </button> <br/>
+<button  id="addlink" disabled> Add Link </button> <br/>
+	
+<a href="http://www.facebook.com"> Facebook </a> <br/>
+<a href="http://www.youtube.com"> Youtube </a> <br/>
+<a href="http://www.cyro.se"> Cyro Movies </a> <br/>
+<a href="http://www.twitter.com"> Twitter </a> <br/>
+<a href="http://www.gmail.com"> Gmail </a> <br/>
+
+<div id="result"> </div>
+</body>
+</html>
